@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
