@@ -1,0 +1,13 @@
+{
+  "name": "@ccs/config-umi",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@umijs/fabric": "^2.14.1",
+    "@umijs/lint": "^4.0.52",
+    "@umijs/max": "^4.0.52"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

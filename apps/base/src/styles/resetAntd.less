@@ -1,0 +1,118 @@
+@import './variables.less'; // 自定义动态变量
+
+// ======================给某些组件添加类名后重置某些样式==========================
+
+//弹窗额外样式
+
+.ia-modal {
+  .ant-modal-content {
+    background: @ccs-modal-bg;
+  }
+  .ant-modal-confirm-body {
+    .ant-modal-confirm-title,
+    .ant-modal-confirm-content {
+      color: @ccs-white-color !important;
+    }
+  }
+}
+
+// 弹框统一样式
+
+.modal_wrap_render {
+  .ant-modal-content {
+    padding: 0;
+
+    .ant-modal-close {
+      top: 12px;
+      color: #ffffff;
+
+      &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .ant-modal-header {
+      background: #136fff;
+      display: flex;
+      align-items: center;
+      height: 45px;
+      padding: 0 20px;
+
+      .ant-modal-title {
+        color: #ffffff;
+        font-weight: 500;
+      }
+    }
+
+    .ant-modal-body {
+      padding: 20px 24px 0px 24px;
+    }
+
+    .ant-modal-footer {
+      padding: 0 40px 24px 24px;
+    }
+  }
+}
+
+// 首页tooltip的额外样式
+.dashboard_tooltip {
+  text-indent: 2ch;
+  font-weight: 300;
+  font-size: 0.13rem;
+  letter-spacing: 0.01rem;
+  font-weight: 600;
+  .ant-tooltip-inner {
+    background-color: @tooltipBgcolor;
+  }
+  .ant-tooltip-content {
+    border: 1px solid rgba(0, 163, 255, 0.35);
+  }
+  // .ant-tooltip-arrow {
+  //   display: none;
+  // }
+}
+
+// LModalForm 的额外样式
+.ia_modal_render {
+  .ant-modal-content {
+    padding: 0;
+    // background: red;
+    color: #fff;
+    .ant-modal-close {
+      top: 12px;
+      color: #ffffff;
+
+      &:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .ant-modal-header {
+      background: #136fff;
+      // background: @tooltipBgcolor;
+      display: flex;
+      align-items: center;
+      height: 45px;
+      padding: 0 20px;
+
+      .ant-modal-title {
+        color: #ffffff;
+        font-weight: 500;
+      }
+    }
+
+    .ant-modal-body {
+      padding: 20px 24px 0px 24px;
+    }
+
+    .ant-modal-footer {
+      padding: 0 40px 24px 24px;
+    }
+    // 表单选项
+    // .ant-form-item .ant-form-item-label > label {
+    //   color: red;
+    // }
+  }
+}

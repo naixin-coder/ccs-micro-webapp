@@ -1,0 +1,82 @@
+.ability_introduction {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0.1rem 0.16rem 0.06rem 0.16rem;
+  background: url('@/assets/imgs/dashboard/ability_introduction_bg.svg') no-repeat center/100% 100%;
+  .instructions {
+    width: 100%;
+    height: 0.46rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .instructions_bg {
+      width: 0.6rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+    .instructions_text {
+      margin: 0 0.1rem;
+      font-weight: 600;
+      font-size: 0.17rem;
+    }
+  }
+  .module_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 0.2rem;
+    .module_content_title {
+      cursor: pointer;
+      margin-bottom: 0.05rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .content_title_text {
+        margin-left: 0.04rem;
+        font-size: 0.15rem;
+        letter-spacing: 0.01rem;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .content_title_pattern {
+        color: #218eff;
+        font-weight: 600;
+      }
+    }
+    .module_content_text {
+      flex: 1;
+      height: 0.2rem;
+      text-indent: 2ch;
+      font-weight: 300;
+      font-size: 0.13rem;
+      letter-spacing: 0.01rem;
+      line-height: 1.6;
+      // display: -webkit-box; /* 使用旧版 WebKit 内核浏览器的属性 */
+      // -webkit-box-orient: vertical; /* 设置文本为垂直方向排列 */
+      // -webkit-line-clamp: 5; /* 设置最大行数 */
+      // overflow: hidden; /* 隐藏溢出的内容 */
+      // text-overflow: ellipsis; /* 显示省略号 */
+    }
+  }
+  .play_button {
+    width: 100%;
+    height: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      cursor: pointer;
+      width: 0.44rem;
+    }
+  }
+}
