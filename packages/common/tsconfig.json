@@ -1,0 +1,12 @@
+{
+  "extends": "@ccs/config-umi/umi-base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@@/*": ["./src/.umi/*"]
+    }
+  },
+  "include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx",],
+  "exclude": ["node_modules"]
+}

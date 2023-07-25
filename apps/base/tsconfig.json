@@ -18,5 +18,5 @@
       "@@/*": ["./src/.umi/*"]
     }
   },
-  "include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"]
+  "include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx", "src/pages/login"]
 }

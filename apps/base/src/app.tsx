@@ -5,9 +5,9 @@ import { history } from '@umijs/max';
 import { Spin } from 'antd';
 import defaultSettings, { SettingsTypes } from '../config/defaultSettings';
 import { LOGIN_PATH, USER_TOKEN } from './constants';
-import { refreshToken } from './pages/login/service';
 import { requestConfig } from './requestConfig';
-import { onRoundRoutes, onTreeNodes } from './utils';
+import { refreshToken } from '@ccs/common';
+import { onRoundRoutes, onTreeNodes } from '@ccs/common';
 
 export async function getInitialState(): Promise<{
   settings?: Partial<LayoutSettings & SettingsTypes>;

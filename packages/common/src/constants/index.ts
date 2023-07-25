@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://skdc.rongzhidata.com:10010' as const; //
+export const BASE_URL = '' as const; //
 
 export const USER_TOKEN = `USER_TOKEN`;
 

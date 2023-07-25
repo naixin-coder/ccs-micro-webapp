@@ -1,5 +1,4 @@
 import { NOT_ACCESS, ACCESS_NAME } from '../src/constants';
-import routerSys from './routes/router-sys';
 
 const routes = [
   {
@@ -23,16 +22,14 @@ const routes = [
     routes: [
       {
         path: '/',
-        redirect: '/dashboard',
+        redirect: '/home',
       },
       {
         name: '首页',
         icon: 'SmileOutlined',
-        path: '/dashboard',
-        component: './dashboard',
+        path: '/home',
+        component: './home',
       },
-      /** 系统管理 */
-      ...routerSys,
       {
         path: '*',
         component: './404',

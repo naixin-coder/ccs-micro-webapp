@@ -1,0 +1,75 @@
+.login_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    background: url('./ai/login_bg.svg') no-repeat center/100% 100%;
+  
+    .login_title_box {
+      width: 60%;
+      height: 15%;
+      display: flex;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .login_box {
+      width: 35%;
+      height: 54%;
+      margin-bottom: 3%;
+      background: url('./ai/login_main_content_bg.svg') no-repeat center/100% 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0.22rem;
+      .login_content {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        :global {
+          .ant-input::placeholder {
+            color: #6e718e;
+          }
+          .ant-input,
+          .ant-input-affix-wrapper,
+          .ant-input-affix-wrapper .anticon {
+            color: #fff;
+            background-color: #090f43;
+            border-color: #090f43;
+          }
+          .ant-input-affix-wrapper-status-error,
+          .ant-input-affix-wrapper:hover {
+            border-color: transparent; //#ff4d4f
+          }
+          .ant-form-item-control-input,
+          .ant-input-affix-wrapper,
+          .ant-btn-primary {
+            height: 0.52rem;
+            background-color: #090f43;
+            border-radius: 6px;
+          }
+          .ant-form-item-control-input {
+            width: 3.92rem;
+          }
+  
+          .lightd-form-item-wrapper-after {
+            margin-left: 0;
+            img {
+              height: 0.52rem !important;
+            }
+          }
+          .ant-btn-primary {
+            background-color: #0f88ff;
+          }
+        }
+      }
+    }
+  }
+  

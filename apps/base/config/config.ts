@@ -5,7 +5,6 @@ import routes from './routes';
 import { theme } from 'antd';
 
 const { REACT_APP_ENV = 'dev' } = process.env;
-const devPath = '/aiysWeb'; //----------暂时
 const { defaultAlgorithm, defaultSeed } = theme;
 const mapToken = defaultAlgorithm(defaultSeed);
 export default defineConfig({
@@ -16,9 +15,9 @@ export default defineConfig({
     'root-entry-name': 'variable',
   },
   title: GlobalConfig.AppName,
-  base: `${REACT_APP_ENV === 'dev' ? devPath : ''}${GlobalConfig.Context}`,
+  base: GlobalConfig.Context,
   // 路径
-  publicPath: `${REACT_APP_ENV === 'dev' ? devPath : ''}${GlobalConfig.Context}`,
+  publicPath: GlobalConfig.Context,
   ignoreMomentLocale: true,
   proxy: proxy[REACT_APP_ENV as keyof typeof proxy],
   fastRefresh: true,
@@ -44,15 +43,17 @@ export default defineConfig({
   access: {},
   headScripts: [
     {
-      src: `${REACT_APP_ENV === 'dev' ? devPath : ''}/scripts/loading.js`,
+      src: `/scripts/loading.js`,
       async: true,
     },
   ],
   //================ pro 插件配置 =================
   presets: ['umi-presets-pro'],
-  mfsu: {
-    strategy: 'normal',
-  },
+  // 开启后packages中的组件无法更新
+  mfsu: false,
+  // mfsu: {
+  //   strategy: 'normal',
+  // },
   requestRecord: {},
   //webpack配置
 });
