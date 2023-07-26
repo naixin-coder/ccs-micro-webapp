@@ -5,6 +5,7 @@ import Menu from './MenuDropdown';
 import styles from './index.less';
 import header_title from '@/assets/imgs/login/header/header_title.svg';
 import { history, useLocation, useModel } from '@umijs/max';
+import { HOME_PATH } from '@/constants';
 
 const GlobalHeader: React.FC = () => {
   const location = useLocation();
@@ -19,8 +20,8 @@ const GlobalHeader: React.FC = () => {
         <div className={styles.header_left_content}>
           <img
             onClick={() => {
-              if (location.pathname === '/dashboard') return;
-              history.replace('/dashboard');
+              if (location.pathname === HOME_PATH) return;
+              history.replace(HOME_PATH);
             }}
             title="首页"
             src={header_title}

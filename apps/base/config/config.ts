@@ -56,4 +56,16 @@ export default defineConfig({
   // },
   requestRecord: {},
   //webpack配置
+
+  //qiankun配置
+  qiankun: {
+    master: {
+      apps: [
+        {
+          name: 'slave',
+          entry: '//localhost:8001',
+        },
+      ],
+    },
+  },
 });

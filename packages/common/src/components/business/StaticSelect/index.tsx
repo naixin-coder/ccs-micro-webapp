@@ -1,4 +1,4 @@
-import { apiQueryPageValue } from '@/services/public';
+import { apiQueryPageValue } from '../../../services';
 import { useRequest } from 'ahooks';
 import { Spin } from 'antd';
 import { LFormItemSelect, LFormItemSelectProps } from 'lighting-design';

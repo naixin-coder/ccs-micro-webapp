@@ -1,5 +1,5 @@
 import { get, post } from '../../../services';
-import { RsaEncrypt, stringToHex } from '@/utils';
+import { RsaEncrypt, stringToHex } from '../../../utils';
 
 // 获取验证码
 const getCaptchaImg = async () => get(`/service-sysmgr/LoginController/getCaptchaImg`);

@@ -1,8 +1,0 @@
-{
-  "name": "@ccs/app-other",
-  "version": "0.0.0",
-  "private": true,
-  "scripts": {
-    "build": "turbo build"
-  }
-}

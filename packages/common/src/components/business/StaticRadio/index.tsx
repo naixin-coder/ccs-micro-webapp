@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import React from 'react';
 import { RadioChangeEvent, Spin } from 'antd';
-import { apiQueryPageValue } from '@/services/public';
+import { apiQueryPageValue } from '../../../services';
 import { LFormItemRadio, LFormItemRadioProps } from 'lighting-design';
 import { useRequest } from 'ahooks';
 

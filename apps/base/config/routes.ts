@@ -22,13 +22,19 @@ const routes = [
     routes: [
       {
         path: '/',
-        redirect: '/home',
+        redirect: '/dashboard',
       },
       {
         name: '首页',
         icon: 'SmileOutlined',
-        path: '/home',
-        component: './home',
+        path: '/dashboard',
+        component: './dashboard',
+      },
+      {
+        name: '子应用',
+        path: '/slave/*',
+        icon: 'SettingOutlined',
+        microApp: 'slave',
       },
       {
         path: '*',

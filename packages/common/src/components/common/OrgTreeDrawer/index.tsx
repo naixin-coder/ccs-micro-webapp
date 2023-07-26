@@ -1,5 +1,5 @@
 import AuthTable from '../AuthTable';
-import { apiPagefindOrg, apiPublicOrgChildren } from '@/services/public';
+import { apiPagefindOrg, apiPublicOrgChildren } from '../../../services';
 import { DownOutlined } from '@ant-design/icons';
 import { useRequest } from '@umijs/max';
 import { Button, message, Space, Spin, Tooltip, Tree, Typography } from 'antd';

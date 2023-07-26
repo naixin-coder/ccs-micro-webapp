@@ -1,18 +1,7 @@
 {
+  "extends":["@ccs/config-umi/umi-base.json"],
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "jsx": "preserve",
-    "esModuleInterop": true,
-    "sourceMap": true,
     "baseUrl": "./",
-    "skipLibCheck": true,
-    "experimentalDecorators": true,
-    "strict": true,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
     "paths": {
       "@/*": ["./src/*"],
       "@@/*": ["./src/.umi/*"]

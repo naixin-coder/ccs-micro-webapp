@@ -10,7 +10,6 @@ export const isDev = process.env.NODE_ENV === 'development';
 
 export const MicroLayout: React.FC<ProLayoutProps> = (props) => {
   const { initialState } = useModel('@@initialState');
-  console.log(initialState);
   const location = useLocation();
   const navigate = useNavigate();
   const route = useAppData().clientRoutes[useAppData().clientRoutes.length - 1].routes;
@@ -32,6 +31,7 @@ export const MicroLayout: React.FC<ProLayoutProps> = (props) => {
   return (
     <ConfigProvider theme={{ token: { colorPrimary: '#1890ff' } }}>
       <ProLayout
+        style={{ height: '100%' }}
         route={{ routes: loopMenuItem(route as MenuDataItem[]) }}
         breadcrumbRender={false}
         menuItemRender={(item: any, defaultDom: React.ReactNode) => {
